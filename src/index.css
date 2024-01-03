@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App {
+  height: 100vb;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #111111;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+}

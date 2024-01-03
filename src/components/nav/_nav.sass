@@ -1,0 +1,35 @@
+@import "../../styles/_mix"
+@import "../../styles/_var"
+
+.nav-container
+    @include container($width: 800px, $jc: space-between)
+    z-index: 999
+    padding: 20px 0
+    position: fixed
+
+    .nav-logo
+        font-family: $logo-font
+        font-size: 20px
+        color: $white
+    .nav-links-wrapper
+
+        .nav-lists
+            margin: 0
+            @include container($width: 100%, $jc: "")
+            @include links()
+
+            .nav-list
+                margin-left: 10px
+
+                .nav-list-a
+                    @include a($nalLinkColor)
+                    font-size: 15px
+
+                &:last-child
+                    .nav-list-a
+
+                        color: $corpRed
+                        border: 1px solid $corpRed
+                        border-radius: 25px
+                        padding: 10px 20px
+                        color: $corpRed

@@ -1,0 +1,34 @@
+import React from "react";
+import "./_home.sass";
+import Insta from "../styles/svg/instagram.svg";
+import Twitter from "../styles/svg/twitter.svg";
+import FB from "../styles/svg/facebook.svg";
+
+function Home() {
+  return (
+    <div className="container">
+      <div className="home-wrapper">
+        <div className="home-content">
+          <h3 className="home-title">BUILD YOUR BODY STRONG</h3>
+          <p className="home-tetx">
+            Achieve your health & fitness goals at any stage
+          </p>
+          <button className="home-start">Get Started</button>
+        </div>
+        <div className="home-socials">
+          <a href="#" className="social-link">
+            <img src={Insta} alt="" />
+          </a>
+          <a href="#" className="social-link">
+            <img src={Twitter} alt="" />
+          </a>
+          <a href="#" className="social-link">
+            <img src={FB} alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Home;

@@ -1,0 +1,55 @@
+@import "../styles/_mix"
+@import "../styles/_var"
+
+.container
+    padding-top: 64px
+    @include container(100%, $jc: center)
+    height: 100vb
+    @include background('../styles/img/home.jpg')
+
+    .home-wrapper
+        z-index: 999
+        @include container(800px, $jc: center)
+        .home-content
+            z-index: 999
+            @include container(90%, $jc: center)
+            flex-direction: column
+            .home-title
+                color: $white
+                font-size: $fs3r
+                text-align: center
+                margin-bottom: $mg-btm1r
+            .home-tetx
+                color: $white
+                font-size: $fs1r
+                margin-bottom: $mg-btm2r
+
+            button
+                @include buttonStart($corpRed)
+
+        .home-socials
+            z-index: 999
+            @include container(10%, $jc: "")
+            flex-direction: column
+            align-items: flex-end
+
+            &::before
+                content: ""
+                width: 3px
+                height: 100px
+                background-color: #fff
+                margin-right: 13px
+
+            &::after
+                content: ""
+                width: 3px
+                height: 100px
+                background-color: #fff
+                margin-right: 13px
+
+            .social-link
+                width: 30px
+                margin: 20px 0
+
+                img
+                    width: 100%
