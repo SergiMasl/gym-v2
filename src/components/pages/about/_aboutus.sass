@@ -1,0 +1,57 @@
+@import "../../../styles/_mix"
+@import "../../../styles/_var"
+
+.aboutus-wrapper
+    @include wrapper(space-between)
+
+    .au-img-conteiner
+        width: 350px
+
+        img
+            width: 300px
+            height: 300px
+            box-shadow: 20px 20px 0px 0px red
+
+    .au-content
+        width: 400px
+        display: flex
+        flex-direction: column
+        gap: $fs2r
+        .au-title-content
+            display: flex
+            align-items: center
+            &::before
+                content: ""
+                width: 80px
+                height: 2px
+                background-color: $corpRed
+                margin-right: 10px
+            .au-title
+                font-size: $fs1-5r
+                color: $textGrey
+
+        .ua-text-title
+            font-size: $fs2r
+            color: $white
+            span
+                color: $corpRed
+        .ua-text
+            font-size: $fs0-8r
+            color: $textGrey
+
+        .ua-list
+            @include links
+            display: flex
+            flex-direction: column
+            gap: 20px
+
+            .ua-li
+                display: flex
+                gap: 10px
+
+                .img-done-ua
+                    width: 20px
+
+                p
+                    color: $textGrey
+                    font-size: $fs0-8r

@@ -28,8 +28,6 @@
     background-color: $bc
     font-size: 15px
     border-radius: 25px
-    // &:hover
-    //     background-color: darken($bc, 0.5)
 
 @mixin background($imgpath,$position:0 0,$repeat: no-repeat)
     position: relative
@@ -48,3 +46,12 @@
         repeat: $repeat
         z-index: 0
     background-size: cover
+
+@mixin wrapper($jc)
+    justify-content: $jc
+    max-width: 800px
+    width: 800px
+    display: flex
+    align-items: center
+    padding-top: 64px
+    height: 100vb
