@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/gym-v2/static/css/main.3a6d8931.css",
-    "main.js": "/gym-v2/static/js/main.f588d474.js",
+    "main.css": "/gym-v2/static/css/main.fc57a641.css",
+    "main.js": "/gym-v2/static/js/main.4da79a12.js",
     "static/media/home.jpg": "/gym-v2/static/media/home.f1f11d60ba094358a34d.jpg",
     "static/media/fitness-ua.jpg": "/gym-v2/static/media/fitness-ua.4c6a95fae0ea3dc1e76e.jpg",
     "static/media/twitter.svg": "/gym-v2/static/media/twitter.1c8fe414ad99ea895707c46cda5a0b91.svg",
@@ -9,11 +9,11 @@
     "static/media/instagram.svg": "/gym-v2/static/media/instagram.3df51156e71e22c4045c1cf9ce27a318.svg",
     "static/media/done.svg": "/gym-v2/static/media/done.d3ed313c191e0a4488ca17bc8c190484.svg",
     "index.html": "/gym-v2/index.html",
-    "main.3a6d8931.css.map": "/gym-v2/static/css/main.3a6d8931.css.map",
-    "main.f588d474.js.map": "/gym-v2/static/js/main.f588d474.js.map"
+    "main.fc57a641.css.map": "/gym-v2/static/css/main.fc57a641.css.map",
+    "main.4da79a12.js.map": "/gym-v2/static/js/main.4da79a12.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a6d8931.css",
-    "static/js/main.f588d474.js"
+    "static/css/main.fc57a641.css",
+    "static/js/main.4da79a12.js"
   ]
 }
