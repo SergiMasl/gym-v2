@@ -6,10 +6,10 @@ function Nav() {
   const navList = [
     { titel: "Home", link: "" },
     { titel: "About", link: "about" },
-    { titel: "Traners", link: "traners" },
-    { titel: "Classes", link: "#" },
-    { titel: "Blog", link: "#" },
-    { titel: "Contact us", link: "#" },
+    // { titel: "Traners", link: "traners" },
+    // { titel: "Classes", link: "#" },
+    // { titel: "Blog", link: "#" },
+    { titel: "Contact us", link: "contact" },
     { titel: "Join Now", link: "#" },
   ];
 
@@ -21,7 +21,7 @@ function Nav() {
           {navList.map((i) => (
             <li className="nav-list" key={i.titel}>
               {console.log(i.link)}
-              <Link to={`/${i.link}`} className="nav-list-a">
+              <Link to={`/gym-v2/${i.link}`} className="nav-list-a">
                 {i.titel}
               </Link>
             </li>

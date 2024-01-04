@@ -1,0 +1,131 @@
+@import "../../../styles/_mix"
+@import "../../../styles/_var"
+
+.contacts-wrapper
+    @include wrapper(center)
+    flex-direction: column
+    .footer-wrapper
+        display: flex
+        color: white
+        justify-content: space-between
+        width: 100%
+        gap: $fs7r
+        margin-bottom: 48px
+        .footer-content
+            display: flex
+            flex-direction: column
+            gap: $fs1-5r
+            margin-bottom: $fs3r
+            width: 652px
+            .footer-title
+                font-size: $fs2r
+                span
+                    color: $corpRed
+            .footer
+                display: flex
+                flex-direction: column
+                gap: $fs0-5r
+                padding: 0
+                li
+                    @include links
+                    display: flex
+                    align-items: center
+                    gap: $fs0-5r
+
+                img
+                    width: 10px
+                    height: 10px
+                    background-color: $corpRed
+                    border-radius: 25px
+
+                p
+                    font-size: $fs0-8r
+                    color: $textGrey
+                a
+                    font-size: $fs0-8r
+                    @include a($white)
+
+        .footer-form-wrapper
+            display: flex
+            flex-direction: column
+            gap: $fs1r
+            width: 100%
+
+            input
+                background: none
+                border: none
+                border-bottom: 1px solid $textGrey
+                width: 100%
+                padding: $fs1r 0
+                color: $white
+                font-size: $fs1r
+
+            .btm-sub
+                color: $white
+                background-color: $corpRed
+                padding: 10px 5px
+                border-radius: 25px
+                width: 180px
+
+    .footer-operation-time
+        display: flex
+        justify-content: space-between
+        width: 100%
+        margin-bottom: 50px
+        color: #fff
+        .footer-logo
+            font-family: $logo-font
+            font-size: 20px
+            color: $white
+        .footer-content-operation-time
+            display: flex
+            flex-direction: column
+            gap: $fs1-5r
+            .time-wrap
+                display: flex
+                flex-direction: column
+                gap: $fs1r
+                font-size: $fs0-8r
+                color: $textGrey
+        .footer-content-sub
+            display: flex
+            flex-direction: column
+            gap: $fs1r
+            p
+                font-size: $fs0-8r
+                color: $textGrey
+            form
+
+                input
+                    background: none
+                    border: 1px solid $textGrey
+
+                    border-radius: 25px 0 25px 25px
+                    padding: 10px 15px
+                    color: $white
+                    margin-right: 15px
+
+                button
+                    background-color: $corpRed
+                    border: none
+                    border-radius: 25px
+                    padding: 10px 10px
+                    color: $white
+    .underline
+        width: 100%
+        height: 1px
+        background-color: $textGrey
+        margin-bottom: 40px
+    .footer-icons
+        width: 100%
+        display: flex
+        justify-content: end
+        .icons
+            display: flex
+            gap: 10px
+            .social-link
+                width: 30px
+
+                img
+                    width: 100%
+                    filter: invert(42%) sepia(93%) saturate(9000%) hue-rotate(358deg) brightness(119%) contrast(119%)
