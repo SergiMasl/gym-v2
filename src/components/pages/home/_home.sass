@@ -1,5 +1,5 @@
-@import "../styles/_mix"
-@import "../styles/_var"
+@import "../../../styles/_mix"
+@import "../../../styles/_var"
 
 .container
     padding-top: 64px
@@ -10,6 +10,10 @@
     .home-wrapper
         z-index: 999
         @include container(800px, $jc: center)
+
+        @media  (max-width: 825px)
+            flex-direction: column
+
         .home-content
             z-index: 999
             @include container(90%, $jc: center)
@@ -19,13 +23,25 @@
                 font-size: $fs3r
                 text-align: center
                 margin-bottom: $mg-btm1r
+
+                @media  (max-width: 825px)
+                    font-size: $fs2r
+
             .home-tetx
                 color: $white
                 font-size: $fs1r
                 margin-bottom: $mg-btm2r
+                text-align: center
 
+                @media (max-width: 414px)
+                    font-size: $fs1r
             button
                 @include buttonStart($corpRed)
+                font-size: $fs1-5r
+
+                @media  (max-width: 825px)
+                    width: 90%
+                    font-size: $fs1-5r
 
         .home-socials
             z-index: 999
@@ -33,12 +49,25 @@
             flex-direction: column
             align-items: flex-end
 
+            @media  (max-width: 825px)
+                flex-direction: row
+                justify-content: center
+                align-items: center
+                max-width: 90%
+                width: 90%
+                position: absolute
+                bottom: 0
+                gap: 20px
+
             &::before
                 content: ""
                 width: 3px
                 height: 100px
                 background-color: #fff
                 margin-right: 13px
+                @media  (max-width: 825px)
+                    width: 100px
+                    height: 3px
 
             &::after
                 content: ""
@@ -46,6 +75,9 @@
                 height: 100px
                 background-color: #fff
                 margin-right: 13px
+                @media  (max-width: 825px)
+                    width: 100px
+                    height: 3px
 
             .social-link
                 width: 30px

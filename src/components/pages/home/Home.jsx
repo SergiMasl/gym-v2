@@ -1,8 +1,9 @@
 import React from "react";
 import "./_home.sass";
-import Insta from "../styles/svg/instagram.svg";
-import Twitter from "../styles/svg/twitter.svg";
-import FB from "../styles/svg/facebook.svg";
+import Insta from "../../../styles/svg/instagram.svg";
+import Twitter from "../../../styles/svg/twitter.svg";
+import FB from "../../../styles/svg/facebook.svg";
+// import { Link } from "react-router-dom";
 
 function Home() {
   return (

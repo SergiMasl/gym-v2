@@ -44,7 +44,7 @@ function FormContact() {
         value={formData.email}
       ></input>
       <input
-        type="number"
+        type="tel"
         required
         placeholder="Phone Number"
         name="number"
