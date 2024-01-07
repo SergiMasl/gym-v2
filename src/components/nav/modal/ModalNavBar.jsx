@@ -6,6 +6,7 @@ function ModalNavBar({ isOpen, onClose }) {
   const navList = [
     { titel: "Home", link: "" },
     { titel: "About", link: "about" },
+    { titel: "Price", link: "price" },
     // { titel: "Traners", link: "traners" },
     // { titel: "Classes", link: "#" },
     // { titel: "Blog", link: "#" },
@@ -23,7 +24,6 @@ function ModalNavBar({ isOpen, onClose }) {
         <ul className="modal-nav-lists">
           {navList.map((i) => (
             <li className="modal-nav-list" key={i.titel}>
-              {console.log(i.link)}
               <Link
                 to={`/gym-v2/${i.link}`}
                 className="modal-nav-list-a"

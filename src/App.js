@@ -4,6 +4,7 @@ import AboutUs from "./components/pages/about/AboutUs";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Contacts from "./components/pages/contacts/Contacts";
 import Modal from "./components/nav/modal/ModalNavBar";
+import Price from "./components/pages/price/Price";
 import React, { useState } from "react";
 
 function App() {
@@ -14,17 +15,22 @@ function App() {
   const closeModal = () => {
     setIsModalOpen(false);
   };
-  console.log(isModalOpen);
 
   return (
     <div className="App">
       <BrowserRouter>
         <Nav />
         <Routes>
+          <Route path="/" element={<Home openModal={openModal} />} />
           <Route path="/gym-v2/" element={<Home openModal={openModal} />} />
           <Route
             path="/gym-v2/about"
             element={<AboutUs openModal={openModal} />}
+          ></Route>
+
+          <Route
+            path="/gym-v2/price"
+            element={<Price openModal={openModal} />}
           ></Route>
           <Route
             path="/gym-v2/contact"

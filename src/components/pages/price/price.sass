@@ -1,0 +1,135 @@
+@import "../../../styles/_mix"
+@import "../../../styles/_var"
+
+.price-conteiner
+    @include container(100%, center)
+
+    padding-top: 64px
+    height: 100%
+    flex-direction: column
+    gap: $fs3r
+
+    @media (max-width: 467px)
+        gap: $fs1r
+        padding-top: 0
+
+    .price-title
+        display: flex
+        flex-direction: column
+        align-items: center
+        gap: $fs1r
+        h4
+            color: $textGrey
+            text-align: center
+            font-size: $fs0-8r
+
+            @media (max-width:300px)
+                font-size: $fs0-5r
+        .line
+            width: 40px
+            height: 1px
+            background-color: $corpRed
+            @media (max-width:300px)
+                width: 20px
+
+        p
+            color: $white
+            font-weight: 900
+            font-size: $fs1-5r
+
+            @media (max-width:745px)
+                font-weight: 800
+                font-size: $fs1r
+            @media (max-width:300px)
+                font-weight: 500
+                font-size: $fs0-8r
+
+            span
+                color: $corpRed
+    .price-content
+        color: $textGrey
+        display: flex
+        gap: $fs2r
+        .card
+            width: 180px
+            max-width: 180px
+            background-color: $black
+            padding: 20px
+            border-radius: 10px
+            box-shadow: 0px 0px 5px red
+            display: flex
+            flex-direction: column
+            gap: 1rem
+            .card-title
+                text-align: center
+                font-size: $fs0-8r
+            .card-price
+                text-align: center
+                font-size: $fs2r
+                color: $white
+                font-weight: 800
+                span
+                    font-weight: 300
+                    font-size: $fs1r
+            .card-status
+                text-align: center
+                font-size: $fs1r
+                // margin-top: $fs1-5r
+                padding-bottom: 10px
+                border-bottom: 1px solid $corpRed
+            .card-description
+                text-align: center
+                font-size: $fs0-8r
+                // margin-top: $fs1r
+            .btm-price
+                font-size: $fs1r
+                color: $white
+                text-align: center
+                background-color: $corpRed
+                border-radius: 25px
+                padding: 10px 20px
+
+        @media (max-width:745px)
+            gap: $fs0-8r
+            .card
+                width: 100px
+                max-width: 100px
+                .card-title
+                    font-size: $fs0-5r
+                .card-price
+                    font-size: $fs1-5r
+                .card-status
+                    font-size: $fs0-8r
+                .card-description
+                    font-size: $fs0-8r
+                .btm-price
+                    font-size: $fs0-8r
+                    padding: 10px 10px
+
+        @media (max-width: 467px)
+            gap: $fs0-5r
+            flex-direction: column
+            align-items: center
+            .card
+                width: 80%
+                max-width: 80%
+                gap: $fs0-5r
+                padding: 10px
+                .card-title
+                .card-price
+                    font-size: $fs1r
+                    span
+                        font-size: $fs0-5r
+                .card-status
+                    font-size: $fs0-8r
+                .card-description
+                    font-size: $fs0-5r
+                .btm-price
+                    padding: 5px
+
+    .btn-modal-open
+        @media (min-width: 651px)
+            display: none
+
+        @include  btn-modal-open
+        @include modal-img

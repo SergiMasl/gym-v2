@@ -6,6 +6,7 @@ function Nav() {
   const navList = [
     { titel: "Home", link: "" },
     { titel: "About", link: "about" },
+    { titel: "Price", link: "price" },
     // { titel: "Traners", link: "traners" },
     // { titel: "Classes", link: "#" },
     // { titel: "Blog", link: "#" },
@@ -20,7 +21,6 @@ function Nav() {
         <ul className="nav-lists">
           {navList.map((i) => (
             <li className="nav-list" key={i.titel}>
-              {console.log(i.link)}
               <Link to={`/gym-v2/${i.link}`} className="nav-list-a">
                 {i.titel}
               </Link>
