@@ -186,3 +186,9 @@
                 img
                     width: 100%
                     filter: invert(42%) sepia(93%) saturate(9000%) hue-rotate(358deg) brightness(119%) contrast(119%)
+    .btn-modal-open
+        @media (min-width: 501px)
+            display: none
+
+        @include  btn-modal-open
+        @include modal-img

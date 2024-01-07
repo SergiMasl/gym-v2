@@ -4,10 +4,14 @@ import Insta from "../../../styles/svg/instagram.svg";
 import Twitter from "../../../styles/svg/twitter.svg";
 import FB from "../../../styles/svg/facebook.svg";
 // import { Link } from "react-router-dom";
+import ModalMenu from "../../../styles/svg/modal-open.png";
 
-function Home() {
+function Home({ openModal }) {
   return (
     <div className="container">
+      <button onClick={openModal} className="btn-modal-open">
+        <img src={ModalMenu} alt="menu" className="modal-img" />
+      </button>
       <div className="home-wrapper">
         <div className="home-content">
           <h3 className="home-title">BUILD YOUR BODY STRONG</h3>

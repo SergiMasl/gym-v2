@@ -4,10 +4,14 @@ import FB from "../../../styles/svg/facebook.svg";
 import Twitter from "../../../styles/svg/twitter.svg";
 import FormEmailSub from "./FormEmailSub";
 import FormContact from "./FormContact";
+import ModalMenu from "../../../styles/svg/modal-open.png";
 
-function Contacts() {
+function Contacts({ openModal }) {
   return (
     <div className="contacts-wrapper">
+      <button onClick={openModal} className="btn-modal-open">
+        <img src={ModalMenu} alt="menu" className="modal-img" />
+      </button>
       <div className="footer-wrapper">
         <div className="footer-content">
           <h3 className="footer-title">

@@ -2,10 +2,15 @@ import React from "react";
 import "./_aboutus.sass";
 import Img from "../../../styles/img/fitness-ua.jpg";
 import ImgDone from "../../../styles/svg/done.svg";
+import ModalMenu from "../../../styles/svg/modal-open.png";
 
-function AboutUs() {
+function AboutUs({ openModal }) {
   return (
     <div className="aboutus-wrapper">
+      <button onClick={openModal} className="btn-modal-open">
+        <img src={ModalMenu} alt="menu" className="modal-img" />
+      </button>
+
       <div className="au-img-conteiner">
         <img src={Img} alt="" />
       </div>
